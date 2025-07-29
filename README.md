@@ -91,7 +91,19 @@ Running on http://0.0.0.0:5004
 
 ---
 
-### 7️⃣ Plug Into the Frontend
+### 7️⃣ Test the API Locally Using `curl`
+
+Run this command in your terminal to test the chatbot:
+
+```bash
+curl -X POST http://127.0.0.1:5004/chat \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What experience does Nikhil have with AI or ML?"}'
+```
+
+✅ If everything’s working, you'll get a JSON response from the backend with an answer based on your resume.
+
+### 8️⃣ Plug Into the Frontend
 
 Use the provided HTML/JS frontend. Update the JS fetch URL:
 
@@ -105,7 +117,7 @@ fetch("https://yourdomain.com/chat", {
 
 ---
 
-### 8️⃣ Ask Questions Like:
+### Ask Questions Like:
 
 - “What experience does [name] have with ML?”
 - “Which cloud platforms has he worked with?”
