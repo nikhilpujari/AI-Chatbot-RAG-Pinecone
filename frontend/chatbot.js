@@ -27,7 +27,7 @@ function handleUserInput() {
   sendButton.disabled = true;
 
   // Fetch API call to Flask backend
-  fetch("https://rag.nikhilpujari.in/chat", {
+  fetch("https://YourFaskBackend.com/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query: userInput }),
